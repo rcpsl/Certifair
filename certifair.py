@@ -210,23 +210,6 @@ def train(net, trainloader, loss_criterion, optimizer, property, f_reg, epochs =
 
         print(f"====Epoch {epoch}====")
         print("Epoch loss",running_loss)
-        # print("Bound_loss",running_bound_loss)
-        # SAVE_DIR = '/home/hkhedr/Haitham/projects/Ideas/global_fairness/models'
-        # file_dir = os.path.join(SAVE_DIR,f'model_ex_adult_exp3.pth')
-        # torch.save(net.state_dict(), file_dir)
-        # v_args = SimpleNamespace()
-        # v_args.network = file_dir
-        # v_args.dataset = 'adult'
-        # v_args.property = 'property6'
-        # v_args.timeout = 300
-        # v_args.max_depth = 300
-        # v_args.cores= 40
-        # print("====Calling Verifier====")
-        # how_fair = verifier.main(v_args)
-        # train_acc = test(net, trainloader, device)
-        # with open('exp3_adult_fair_003.txt','a') as f:
-        #     f.write(f'{how_fair:.4f}, {train_acc:.4f} \n')
-        #     f.flush()
 
     print('Finished Training')
     acc = test(net, trainloader, device)

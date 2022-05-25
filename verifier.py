@@ -336,7 +336,4 @@ if __name__ == "__main__":
     parser.add_argument('--cores', default=8, type = int)
     # args = None
     args = parser.parse_args()
-    # args.network = '/home/hkhedr/Haitham/projects/Ideas/global_fairness/models/model_ex_17_again.pth'
-    # args.dataset = 'adult'
-    # args.property = 'property4'
     main(args)

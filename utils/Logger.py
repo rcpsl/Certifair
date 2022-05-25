@@ -6,7 +6,8 @@ import os
 from utils.config import Settings
 
 #Root logger config
-log_file = '/home/hkhedr/Haitham/projects/dev/PeregriNN/logs/logs.log'
+DIR_PATH = os.path.dirname(os.path.realpath(__file__))
+log_file = os.path.join(DIR_PATH,'logs/logs.log')
 logging.basicConfig(
         format="%(asctime)s [%(levelname)s] %(name)s - %(message)s",
         level = Settings.LOG_LEVEL,
