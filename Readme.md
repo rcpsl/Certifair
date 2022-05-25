@@ -33,6 +33,8 @@ Similarly, table 3 results can be reproduced by running
 
 `./scripts/tab3.sh`
 
+The results are dumped in `experiments/logs/${experiment_name}.log` and the models are saved in `experiments/models/model_ex_${experiment_name}.pth`
+
 ## Help
 
 For description of all args, run
